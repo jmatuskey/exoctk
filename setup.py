@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 from setuptools import setup
 
-REQUIRES = ['asteval',
+REQUIRES = ['numpy',
+            'asteval',
             'astropy',
             'astroquery',
             'batman-package',
