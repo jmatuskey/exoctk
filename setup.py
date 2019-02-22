@@ -13,16 +13,18 @@ REQUIRES = ['asteval',
             'lmfit',
             'matplotlib',
             'numba',
-            'numpy',
             'pandas',
             'pysynphot',
             'scipy',
             'sphinx',
             'svo_filters']
 
+SETUP_REQUIRES = ['numpy']
+
 setup(name='exoctk',
       version='0.2.2',
       description='Observation reduction and planning tools for exoplanet science',
+      setup_requires=SETUP_REQUIRES,
       install_requires=REQUIRES,
       author='The ExoCTK Group',
       author_email='exoctk@gmail.com',
